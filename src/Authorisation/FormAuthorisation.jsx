@@ -1,5 +1,6 @@
 import { useState } from "react"
 import styled from "@emotion/styled"
+import { Link } from "react-router-dom"
 
 const Form = styled.form`
   display: flex;
@@ -58,7 +59,7 @@ export default function FormAuthorisation() {
         <Inputs 
           name='password'
         />
-        <Button>Go!</Button>
+        <Button><Link to={'/main-page'}>Go!</Link></Button>
       </Form>
   )
 }
